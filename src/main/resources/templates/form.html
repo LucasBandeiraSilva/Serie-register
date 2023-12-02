@@ -27,6 +27,7 @@
           <input
             type="text"
             class="form-control "
+            placeholder="ex: Arrow"
             id="seriesName"
             aria-describedby="emailHelp"
             th:field="*{name}"
@@ -43,6 +44,7 @@
           <input
             type="text"
             class="form-control "
+            placeholder="ex: sci-fi"
             id="genre"
             th:field="*{genre}"
             th:classappend="${#fields.hasErrors('genre')} ? 'is-invalid' : ''"
@@ -58,6 +60,7 @@
           >
           <input
             type="number"
+            placeholder="ex: 2012"
             class="form-control"
             id="seriesDate"
             th:field="*{releaseDate}"

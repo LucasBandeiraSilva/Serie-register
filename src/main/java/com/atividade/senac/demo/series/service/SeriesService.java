@@ -20,8 +20,6 @@ public class SeriesService {
     public ModelAndView saveSeries(@ModelAttribute Series series, BindingResult result) {
         ModelAndView mv = new ModelAndView();
         if (result.hasErrors()) {
-            System.out.println("has errors");
-            System.out.println(result.getAllErrors());
             return new ModelAndView("form");
         }
         this.serieRepository.save(series);
